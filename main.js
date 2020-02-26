@@ -15,15 +15,15 @@ function includes (arr, hold){
   }
 return false;
 }
-
+q
 function slice (str,num,num1){
 let sprung = '';//empty string
 if(num === undefined && num1 === undefined){//.slice(no value,no value) so it just returns string.
 return str;
 } if(num >= 0 && num1 === undefined){//.slice(value,no value) returns string from that index on.
-for(i = 0; i < str.length; i ++){
+for(let i = num; i < str.length; i ++) {
   sprung += str[i];
-}return str[i];
+}return sprung;
 }
 }
 
