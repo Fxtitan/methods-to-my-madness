@@ -9,9 +9,10 @@ console.log(repeat('omg ',3))
 
 function includes (arr, hold){
   for (let i = 0; i < arr.length; i ++){
-    if(new Array(arr + 1).join(hold)){
+    if(arr[i] === hold){
       return true;}
-  }return false;
+  }
+return false;
 }
 
 
