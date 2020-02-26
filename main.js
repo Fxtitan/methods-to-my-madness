@@ -1,11 +1,12 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-function repeat(str, times) {
-  return new Array(times + 1).join(str);
-}// (times + 1) the length of array same as str.length
-repeat('omg ', 3)
-console.log(repeat('omg ',3))
+function repeat(str,times) {
+  let string = '';
+  while (times > 0){
+    string += str; times --;
+  }return string;
+}console.log(repeat('omg ', 3))
 
 function includes (arr, hold){
   for (let i = 0; i < arr.length; i ++){
@@ -14,6 +15,31 @@ function includes (arr, hold){
   }
 return false;
 }
+
+function slice (str,num,num1){
+let sprung = '';//empty string
+if(num === undefined && num1 === undefined){//.slice(no value,no value) so it just returns string.
+return str;
+} if(num >= 0 && num1 === undefined){//.slice(value,no value) returns string from that index on.
+for(i = 0; i < str.length; i ++){
+  sprung += str[i];
+}return str[i];
+}
+}
+
+
+function join (arr) {
+  const array = [];
+  while(arr > 0){
+    return array
+  }
+
+  }
+
+
+
+
+  
 
 
 
